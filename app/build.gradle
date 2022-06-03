@@ -17,9 +17,6 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-
-        // should correspond to key/value pairs inside the file
-        buildConfigField("String", "API_KEY", apikeyProperties['API_KEY'])
     }
 
     buildTypes {
@@ -32,16 +29,13 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-
-    buildFeatures {
-        viewBinding true
-    }
 }
 
 dependencies {
     implementation 'com.codepath.libraries:asynchttpclient:2.2.0'
 
     implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
     // Glide v4 uses this new annotation processor -- see https://bumptech.github.io/glide/doc/generatedapi.html
     annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
 
