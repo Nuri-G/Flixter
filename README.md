@@ -1,5 +1,6 @@
 *Flixster* shows the latest movies currently playing in theaters. The app utilizes the Movie Database API to display images and basic information about these movies to the user.
 
+# Put your API key as API_KEY in apikey.properties in the root of the project
 
 ## User Stories
 
